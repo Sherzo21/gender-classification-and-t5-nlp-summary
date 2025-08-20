@@ -31,7 +31,7 @@ Install the dependencies with pip:
 pip install torch torchvision ultralytics scikit-learn transformers opencv-python tqdm filterpy
 
 
-Usage
+## Usage
 1. Train the Gender Classifier
 
 1.1. Prepare a dataset with:
