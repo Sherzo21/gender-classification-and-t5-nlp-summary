@@ -39,6 +39,7 @@ pip install torch torchvision ultralytics scikit-learn transformers opencv-pytho
         Labels (.txt files with format: gender: 0 or gender: 1)
 
 1.2. Run training:
+```bash
     python train.py
 It saves the best model as best_resnet50_gender_model.pth
 Logs metrics, accuracy/loss plots, and classification reports
@@ -46,6 +47,7 @@ Logs metrics, accuracy/loss plots, and classification reports
 2. Run the Video Pipeline
 2.1. Provide an input video and trained model:
 2.2. Run
+```bash
     python pipeline.py
 It outputs:
     Annotated video (bounding boxes, gender labels)
@@ -53,13 +55,13 @@ It outputs:
     Optional natural-language summary (using T5)
 
 
-#Model & Data Notes
+## Model & Data Notes
     ResNet50 is initialized with ImageNet weights and fine-tuned.
     Normalization is crucial: input images should match ImageNet mean/std.
     Labels: 0 = Male, 1 = Female (configurable).
     For imbalanced datasets, use class weights in training.
 
-#Future Improvements
+## Future Improvements
     Add “Unknown” class with confidence thresholding.
     Integrate live webcam mode.
     Export inference results as structured CSV/JSON.
