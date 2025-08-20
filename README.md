@@ -1,4 +1,4 @@
-# Gender Classification with ResNet50 + YOLOv8 + SORT
+# Gender Classification with ResNet50 + YOLOv8 + SORT + T5 based classification summary
 
 This project provides an **end-to-end pipeline** for detecting people in video streams, tracking them across frames, and classifying gender using a fine-tuned ResNet-50. It combines **object detection (YOLOv8)**, **multi-object tracking (SORT)**, and **deep classification (ResNet50)** into a complete system.
 
