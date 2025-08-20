@@ -39,17 +39,21 @@ pip install torch torchvision ultralytics scikit-learn transformers opencv-pytho
         Labels (.txt files with format: gender: 0 or gender: 1)
 
 1.2. Run training:
+
 ```bash
 python train.py
+
 
 It saves the best model as best_resnet50_gender_model.pth
 Logs metrics, accuracy/loss plots, and classification reports
 
 2. Run the Video Pipeline
 2.1. Provide an input video and trained model:
-2.2. Run
+2.2. Run:
+
 ```bash
 python pipeline.py
+
 
 It outputs:
     Annotated video (bounding boxes, gender labels)
