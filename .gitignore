@@ -1,0 +1,43 @@
+@'
+# OS / Editor junk
+.DS_Store
+Thumbs.db
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyd
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Logs & temp
+*.log
+*.tmp
+
+# Model weights / checkpoints
+*.pth
+*.pt
+
+# Videos and large media (outputs & tests)
+*.mp4
+*.avi
+*.mov
+gender_output*
+gender_output_*/
+
+# Plots & reports you don't want in git (keep if you prefer)
+accuracy_plot.png
+loss_plot.png
+metrics_log
+
+# YOLO models (often large)
+yolov*.pt
+'@ | Out-File -Encoding utf8 .gitignore
